@@ -93,7 +93,7 @@ python finetuning.py \
     --dev_dataset="data/wikitable/dev.table_col_type.json" \
     --type_vocab="type_vocab/wikitable/type_vocab.txt" \
     --hybrid_model_path="checkpoints/pretrained_hybrid_model/pytorch_model.bin" \
-    --output_dir="checkpoints/adtd/wikitable_with_hist" \
+    --output_dir="<adtd_model_dir>" \
     --evaluate_during_training \
     --overwrite_output_dir \
     --use_histogram_feature
@@ -150,7 +150,7 @@ python evaluation.py \
     --mysql_password=<mysql_password> \
     --eval_database=<mysql_database> \
     --test_dataset="data/wikitable/test.table_col_type.json" \
-    --model_dir="checkpoints/adtd/wikitable_with_hist" \
+    --model_dir="<adtd_model_dir>" \
     --type_vocab="type_vocab/wikitable/type_vocab.txt" \
     --use_histogram_feature \
     --threshold_alpha=0.1 \
